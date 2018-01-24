@@ -1,0 +1,106 @@
+body {
+	margin: 0 auto;
+}
+
+/*navigation here*/
+.menu {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+}
+
+.menu img {
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+.menu ul {
+	float: right;
+	margin-right: 100px;
+	padding-top: 19px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.menu li {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.menu a {
+	padding: 50px 20px;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.sign {
+	text-align: center;
+	width: 115px;
+	height: 40px;
+	border-radius: 5px;
+	border: solid 1px white;
+	line-height: 37px;
+}
+
+.log {
+	border-left: solid 1px white;
+	font-size: 14px;
+	padding: 12px;
+}
+
+/*Mixblended photos like color on background image*/
+section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/mask-copy@2x.png");
+    content:" ";
+	mix-blend-mode: multiply;
+}
+
+section {
+	/*Text centered in section*/
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+
+	/*background image*/
+	position: relative;
+	margin: 0 auto;
+	height: 600px;
+	width: 100%;
+	background: url("../img/freight-slide@2x.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.cntrtxt {
+	position: relative;
+	z-index: 5;
+	color: white;
+}
+
+.cntrtxt h1 {
+	margin: 0;
+	font-size: 55px;
+}
+
+.cntrtxt p {
+	font-size: 14px;
+}
+
+button {
+	width: 125px;
+	height: 35px;
+	margin: 35px;
+	border-radius: 5px;
+	border: 0;
+	background-color: white;
+}
